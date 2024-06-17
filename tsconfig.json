@@ -11,6 +11,5 @@
       "forceConsistentCasingInFileNames": true,
       "useUnknownInCatchVariables": true,
       "noImplicitOverride": true,
-      "verbatimModuleSyntax": true,
   }
 }

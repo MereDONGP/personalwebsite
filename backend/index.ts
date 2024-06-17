@@ -1,6 +1,10 @@
 require('dotenv').config()
-const express = require('express')
+import express from 'express'
+import github from './controller/github'
+
 const app = express()
+app.use('/api', github)
 
-
-console.log(`here is the port ${process.env.PORT}`)
+app.listen( process.env.PORT, () => {
+    console.log(`the app is running on ${process.env.PORT}`)
+})
