@@ -1,15 +1,11 @@
 {
   "compilerOptions": {
-      "noEmit": true,
-      "strict": true,
-      "target": "ESNext",
-      "lib": ["ESNext", "DOM", "DOM.Iterable"],
-      "allowJs": true,
-      "jsx": "preserve",
-      "esModuleInterop": true,
-      "moduleResolution": "bundler",
-      "forceConsistentCasingInFileNames": true,
-      "useUnknownInCatchVariables": true,
-      "noImplicitOverride": true,
+    "target": "ES6",
+    "outDir": "./build/",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node16", "module": "node16"
   }
 }

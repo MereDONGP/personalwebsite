@@ -1,6 +1,7 @@
-require('dotenv').config()
+import { config } from 'dotenv'
 import express from 'express'
-import github from './controller/github'
+import github from './controller/github.js'
+config()
 
 const app = express()
 app.use('/api', github)
