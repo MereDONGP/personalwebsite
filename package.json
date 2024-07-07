@@ -6,22 +6,27 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": " tsx backend/index.ts"
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsx backend/index.ts",
+    "start": "web-dev-server --config web-dev-server.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.5"
+    "@web/dev-server": "^0.4.6",
+    "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "install": "^0.13.0",
+    "lit": "^3.1.4",
     "npm": "^10.8.1",
     "octokit": "^4.0.2",
-    "tsx": "^4.15.7"
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
   }
 }

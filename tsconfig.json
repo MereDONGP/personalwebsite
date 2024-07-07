@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "outDir": "./build/",
+    "outDir": "./build",
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "moduleResolution": "node16", "module": "node16"
+    "moduleResolution": "node16", "module": "node16",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
   }
 }
